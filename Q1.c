@@ -2,13 +2,14 @@
 #include <float.h>
 
 int main(void) {
-    float num[10], Max, Min;
-    int i = 1;
-    Max = num[0];
-    Min = num[0];
+    float num[10];
 
-    for( ;i <= 10; i++) {
+    for(int i = 0; i < 10; i++) {
         scanf("%f", &num[i]);
+    }
+    float Max = num[0], Min = num[0];
+    
+    for(int i = 1; i < 10; i++) {
         if(num[i] > Max) {
             Max = num[i];
         }
